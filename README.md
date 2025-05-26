@@ -16,17 +16,17 @@ StudyLog는 **스터디 모집부터 운영, 커뮤니케이션, 일정 관리�
 ---
 
 ## 🔧 기술 스택
-- React 19.1.0  
-- JavaScript  
-- Node.js 23.11.0  
-- Spring Boot 3.4.4  
-- Redis 7.4.2  
-- Java 17  
-- JPA  
-- H2 DB  
-- MySQL  
-- Elasticsearch  
-- WebSocket
+- ![React] 19.1.0  
+- ![JavaScript]
+- ![Node.js] 23.11.0  
+- ![Spring Boot] 3.4.4  
+- ![Redis] 7.4.2  
+- ![Java] 17  
+- ![JPA]  
+- ![H2 DB]  
+- ![MySQL]  
+- ![Elasticsearch]
+- ![WebSocket]
   
 ---
 
