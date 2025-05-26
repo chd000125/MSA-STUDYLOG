@@ -112,7 +112,7 @@ docker restart elasticsearch
 
 #### 5. 프론트엔드 실행
 ```bash
-npm install react react-dom react-router-dom axios redux react-redux
+npm install react react-dom react-router-dom axios redux react-redux hooks
 npm install
 npm run dev
 ```
@@ -126,14 +126,13 @@ npm run dev
 - JPA 활용  
 
 #### 프론트엔드
-- React 함수형 컴포넌트  
-- Hooks + Redux Toolkit  
+- React 함수형 컴포넌트
+- Hooks + Redux Toolkit
 
 ### 📌 공통 규칙
-- **카멜 케이스와 스네이크 케이스 활용**  
-- **커밋 전 ESLint / Prettier 확인 권장**  
+- **카멜 케이스와 스네이크 케이스 활용**   
 - **API 응답 일관성 유지**  
-- **서비스/컨트롤러 역할 분리 유지**  
+- **서비스/컨트롤러 역할 분리 유지**
 
 ---
 
