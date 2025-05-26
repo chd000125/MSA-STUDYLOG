@@ -23,10 +23,8 @@ StudyLog는 **스터디 모집부터 운영, 커뮤니케이션, 일정 관리�
 ![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
 ![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=openjdk&logoColor=white)
 ![JPA](https://img.shields.io/badge/JPA-59666C?style=for-the-badge)
-![H2 DB](https://img.shields.io/badge/H2-004d99?style=for-the-badge&logo=h2&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)  
 ![Elasticsearch](https://img.shields.io/badge/Elasticsearch-005571?style=for-the-badge&logo=elasticsearch&logoColor=white)
-![WebSocket](https://img.shields.io/badge/WebSocket-333333?style=for-the-badge)
 
 ---
 
