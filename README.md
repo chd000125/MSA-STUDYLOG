@@ -1,0 +1,2 @@
+# MSA-STUDYLOG
+MSA 기반 통합 커뮤니티 플랫폼 STUDYLOG
