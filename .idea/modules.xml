@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/EurekaServer.main.iml" filepath="$PROJECT_DIR$/.idea/modules/EurekaServer.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/StudyLog.iml" filepath="$PROJECT_DIR$/.idea/StudyLog.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/auth.main.iml" filepath="$PROJECT_DIR$/.idea/modules/auth.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/board.main.iml" filepath="$PROJECT_DIR$/.idea/modules/board.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/client.main.iml" filepath="$PROJECT_DIR$/.idea/modules/client.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/group.main.iml" filepath="$PROJECT_DIR$/.idea/modules/group.main.iml" />
+    </modules>
+  </component>
+</project>

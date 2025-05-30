@@ -1,0 +1,51 @@
+{
+  "settings": {
+    "analysis": {
+      "tokenizer": {
+        "autocomplete_tokenizer": {
+          "type": "edge_ngram",
+          "min_gram": 1,
+          "max_gram": 20,
+          "token_chars": ["letter", "digit", "whitespace"]
+        }
+      },
+      "filter": {
+        "autocomplete_filter": {
+          "type": "edge_ngram",
+          "min_gram": 1,
+          "max_gram": 20
+        }
+      },
+      "analyzer": {
+        "autocomplete_analyzer": {
+          "type": "custom",
+          "tokenizer": "autocomplete_tokenizer",
+          "filter": ["lowercase"]
+        },
+        "nori_analyzer": {
+          "type": "custom",
+          "tokenizer": "nori_tokenizer"
+        }
+      }
+    }
+  },
+  "mappings": {
+    "properties": {
+      "id": { "type": "keyword" },
+      "pId": { "type": "long" },
+      "title": {
+        "type": "text",
+        "analyzer": "nori_analyzer",
+        "search_analyzer": "standard"
+      },
+      "titleAutocomplete": {
+        "type": "text",
+        "analyzer": "autocomplete_analyzer",
+        "search_analyzer": "standard"
+      },
+      "content": { "type": "text" },
+      "nickname": { "type": "keyword" },
+      "createdAt": { "type": "keyword" }
+    }
+  }
+}
