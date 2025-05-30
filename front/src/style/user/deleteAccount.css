@@ -1,0 +1,51 @@
+.delete-account-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.delete-account-button:hover {
+    background-color: #c82333;
+}
+
+.delete-options {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.delete-options button {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: white;
+    cursor: pointer;
+    text-align: left;
+}
+
+.delete-options button.selected {
+    border-color: #dc3545;
+    background-color: #fff5f5;
+}
+
+.delete-form {
+    margin-top: 20px;
+}
+
+.delete-confirm-button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.delete-confirm-button:hover {
+    background-color: #c82333;
+} 

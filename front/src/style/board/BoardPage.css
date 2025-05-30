@@ -1,0 +1,210 @@
+.board-page-layout {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 1.5fr 7fr 1.5fr;  /* 좌측, 중앙, 우측 레이아웃 비율 */
+  gap: 16px;
+  padding: 5vh 10vw;
+  box-sizing: border-box;
+  align-items: start;  /* 세로 정렬을 시작으로 설정 */
+}
+
+.banner {
+  background: linear-gradient(to right, #6366f1, #ec4899);
+  color: white;
+  padding: 30px 40px;
+  margin: 20px 0;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.banner h1 {
+  font-size: 2rem;
+  margin: 0;
+  margin-left: 10vw;
+}
+
+.banner p {
+  font-size: 1rem;
+  margin-top: 10px;
+  margin-left: 10vw;
+}
+
+
+/* 좌측 사이드바 스타일 */
+.board-sidebar-left {
+  border-radius: 8px;
+  align-self: start;
+  margin-top: 150px; /* 아래로 40px 내림 */
+  height: fit-content;
+  z-index: 10;
+  transform: translateX(-50px);
+
+}
+
+
+
+/* 우측 사이드바 스타일 */
+.board-sidebar-right {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  align-self: start;
+  margin-top: 150px;
+  height: fit-content; /* 내용에 맞춰 높이 자동 조절 */
+  z-index: 10; /* 다른 요소들이 겹치지 않도록 z-index 설정 */
+  transform: translateX(50px);
+}
+
+/* 사이드바 제목 */
+.board-sidebar-left h3,
+.board-sidebar-right h3 {
+  margin-left: 20px;
+}
+
+/* 메인 콘텐츠 영역 스타일 (중앙) */
+.board-main {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  gap: 16px;
+}
+
+/* 메인 헤더 (상단 부분) */
+.board-main-header {
+  display: flex;
+  flex-direction: column; /* 세로 배치 */
+  width: 100%;
+}
+
+.board-main-header h2 {
+  margin: 0;
+}
+
+.board-main-header button {
+  padding: 13px 5px;
+  font-size: 14px;
+  background-color: #ffffff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.board-main-header button:hover {
+  background-color: #ffffff;
+}
+
+/* 검색 폼 영역 스타일 */
+.search-form {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 8px;
+  width: 100%;
+  margin-bottom: 10vh;
+}
+
+.search-input {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  flex: 8;  /* 검색 입력 칸 비율 */
+}
+
+.search-button {
+  padding: 8px 12px;
+  font-size: 14px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  flex: 2;  /* 검색 버튼 비율 */
+}
+
+.search-button:hover {
+  background-color: #0056b3;
+}
+
+.board-main-header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.board-main-header-content h2 {
+  margin: 0;
+}
+
+.board-main-header-content button {
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: #6366f1;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.board-main-header-content button:hover {
+  background-color: #ddd;
+}
+
+/* 게시글 목록 스타일 (세로 스크롤과 구분선) */
+.post-row {
+  padding: 16px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.post-row:hover {
+  background: #f9f9f9;
+}
+
+.post-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+.post-meta {
+  font-size: 14px;
+  color: #555;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.post-tags .tag {
+  background: #eee;
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-left: 5px;
+  font-size: 12px;
+}
+
+/* 페이지네이션 스타일 */
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 16px 0;
+}
+
+.page-button {
+  padding: 8px 12px;
+  margin: 0 4px;
+  border: none;
+  background: #eee;
+  cursor: pointer;
+}
+
+.page-button.active {
+  background: #333;
+  color: white;
+}
+
+
+

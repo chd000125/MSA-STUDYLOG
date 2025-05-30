@@ -1,0 +1,131 @@
+.post-create-container {
+  max-width: 1100px;
+  margin: 60px auto;
+  padding: 40px;
+  background-color: #f9fafb;
+  border-radius: 20px;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.05);
+  font-family: 'Pretendard', 'Segoe UI', sans-serif;
+}
+
+.post-create-container h2 {
+  text-align: center;
+  margin-bottom: 36px;
+  font-size: 28px;
+  font-weight: 800;
+  color: #3f3f46;
+}
+
+.post-create-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #6b7280;
+  font-size: 15px;
+}
+
+.post-create-form input{
+  width: 30%;
+  padding: 12px 16px;
+  margin-bottom: 24px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  font-size: 15px;
+  background-color: #ffffff;
+  transition: all 0.25s ease;
+}
+.post-create-form textarea,
+.post-create-form select {
+  width: 16%;
+  padding: 12px 16px;
+  margin-bottom: 24px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  font-size: 15px;
+  background-color: #ffffff;
+  transition: all 0.25s ease;
+}
+
+.post-create-form input:focus,
+.post-create-form textarea:focus,
+.post-create-form select:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2);
+  outline: none;
+}
+
+.post-create-form textarea {
+  min-height: 140px;
+  resize: vertical;
+}
+
+.post-create-form button {
+  margin-left: 1000px;
+  width: 10%;
+  padding: 14px;
+  background: #6366f1;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.post-create-form button:hover {
+  background: linear-gradient(to right, #4f46e5, #7c3aed);
+  transform: translateY(-1px);
+  box-shadow: 0 6px 16px rgba(99, 102, 241, 0.3);
+}
+
+/* 태그 */
+.tag-select-container label {
+  font-weight: 600;
+  color: #6b7280;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.tag-checkbox {
+  display: none;
+}
+
+.tag-label {
+  padding: 8px 16px;
+  border-radius: 9999px;
+  background-color: #f3f4f6;
+  font-size: 14px;
+  cursor: pointer;
+  color: #374151;
+  border: 1px solid #d1d5db;
+  transition: all 0.2s ease;
+}
+
+.tag-label:hover {
+  background-color: #e0e7ff;
+  border-color: #c7d2fe;
+}
+
+.tag-checkbox:checked + .tag-label {
+  background-color: #6366f1;
+  color: white;
+  border-color: #6366f1;
+  font-weight: 600;
+}
+
+.author-display{
+  text-align: right;
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #6b7280;
+  font-size: 15px;
+}

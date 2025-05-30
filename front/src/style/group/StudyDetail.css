@@ -1,0 +1,203 @@
+.study-detail {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    background-color: #f9fafb;
+    font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
+}
+
+.study-detail .study-header {
+    margin-bottom: 2rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid #e5e7eb;
+}
+
+.study-detail .study-header h1 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #1e293b;
+    margin-bottom: 0.5rem;
+}
+
+.study-detail .study-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+.study-detail .study-meta span {
+    background: #e0f2fe;
+    color: #0369a1;
+    padding: 6px 12px;
+    border-radius: 9999px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+.study-detail .study-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+}
+
+.study-detail .study-main section {
+    background: #ffffff;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    margin-bottom: 1.5rem;
+}
+
+.study-detail .study-main h2 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #334155;
+    margin-bottom: 1rem;
+    border-left: 4px solid #6366f1;
+    padding-left: 12px;
+}
+
+.study-detail .study-info p {
+    color: #475569;
+    line-height: 1.6;
+}
+
+.study-detail .curriculum-week {
+    padding: 1rem;
+    background-color: #f1f5f9;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.study-detail .curriculum-week h3 {
+    color: #6366f1;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.study-detail .curriculum-week li {
+    margin-left: 1rem;
+    color: #334155;
+    position: relative;
+    padding-left: 1rem;
+}
+
+.study-detail .curriculum-week li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #6366f1;
+}
+
+.study-detail .study-sidebar {
+    top: 100px;
+    background: #ffffff;
+    border-radius: 1rem;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    max-height: 180px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.study-detail .study-sidebar h2 {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    color: #1e293b;
+}
+
+.study-detail .join-button {
+    width: 100%;
+    background: #6366f1;
+    color: white;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 12px;
+    border-radius: 0.5rem;
+    border: none;
+    transition: all 0.2s ease;
+    margin-top: 1rem;
+}
+
+.study-detail .join-button:hover {
+    background-color: #6366f1;
+    transform: translateY(-1px);
+}
+
+.study-detail .modal-overlay {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.study-detail .modal-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 90%;
+    max-width: 480px;
+}
+
+.study-detail .modal-content textarea {
+    width: 100%;
+    min-height: 120px;
+    border: 1px solid #d1d5db;
+    border-radius: 0.5rem;
+    padding: 1px;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    resize: vertical;
+}
+
+.study-detail .modal-buttons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.study-detail .modal-buttons button[type="submit"] {
+    background-color: #6366f1;
+    color: white;
+    font-weight: 600;
+    padding: 10px 16px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s ease;
+}
+
+.study-detail .modal-buttons button[type="submit"]:hover {
+    background-color: #4f46e5;
+}
+
+.study-detail .modal-buttons button[type="button"] {
+    background-color: #e5e7eb;
+    color: #1f2937;
+    font-weight: 500;
+    padding: 10px 16px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    transition: background-color 0.2s ease;
+}
+
+.study-detail .modal-buttons button[type="button"]:hover {
+    background-color: #d1d5db;
+}
+
+/* ✅ 반응형 */
+@media (max-width: 768px) {
+    .study-detail .study-content {
+        grid-template-columns: 1fr;
+    }
+
+    .study-detail .study-header h1 {
+        font-size: 1.5rem;
+    }
+}

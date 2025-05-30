@@ -1,0 +1,125 @@
+
+
+.email-verification-wrapper {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #f0f4f8, #ffffff);
+    padding: 2rem;
+}
+
+.email-verification-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-top: -50px;
+}
+
+.email-logo {
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: 800;
+    color: #111827;
+    font-family: 'Pretendard', sans-serif;
+    cursor: pointer;
+}
+
+.email-verification-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+    color: #1f2937;
+}
+
+.email-verification-form h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.email-verification-form .email-info {
+    font-size: 0.95rem;
+    color: #6b7280;
+    margin-bottom: 1rem;
+}
+
+.email-verification-form label {
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: #374151;
+}
+
+.email-verification-form input {
+    padding: 0.75rem 1rem;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    font-size: 14px;
+    background-color: #f9f9f9;
+    outline: none;
+    transition: border 0.2s ease;
+}
+
+.email-verification-form input:focus {
+    border-color: #6366f1;
+    background-color: white;
+    box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.2);
+}
+
+.email-verification-form button {
+    padding: 0.75rem;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    width: 100%;
+}
+
+.email-verification-form button[type="email-submit"] {
+    background-color: #6366f1;
+    color: white;
+}
+
+.email-verification-form .resend-button {
+    background-color: #ec4899;
+    color: white;
+}
+
+.email-verification-form .complete-button {
+    background-color: #10b981;
+    color: white;
+}
+
+.email-verification-form button:hover {
+    opacity: 0.95;
+}
+
+.email-verification-form .error-message {
+    color: #dc2626;
+    font-size: 13px;
+    text-align: center;
+    margin-top: -0.5rem;
+    margin-bottom: 0.75rem;
+}
+
+.email-verification-form .back-link {
+    text-align: center;
+    font-size: 14px;
+    color: #6b7280;
+    margin-top: 1.5rem;
+    cursor: pointer;
+}
+
+.email-verification-form .back-link:hover {
+    color: #4b5563;
+    text-decoration: underline;
+}

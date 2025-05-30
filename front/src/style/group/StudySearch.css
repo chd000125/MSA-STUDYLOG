@@ -1,0 +1,483 @@
+.study-search {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.sub-header {
+    background: linear-gradient(to right, #6366f1, #ec4899);
+    color: white;
+    padding: 30px 40px;
+    margin: 20px 0;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.sub-header h2 {
+    margin-bottom: 8px;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.sub-header p {
+    font-size: 1rem;
+    font-weight: 400;
+    opacity: 0.95;
+}
+
+.study-search-container {
+    display: flex;
+    gap: 2rem;
+    max-width: 1150px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.study-content-column {
+    flex: 1;                        /* ✅ 왼쪽 aside를 제외한 나머지 공간 */
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+
+.search-sidebar {
+    top: 100px;
+    width: 250px;
+    background-color: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    height: fit-content;
+    flex-shrink: 0;
+}
+
+.filter-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    color:#9333ea;
+}
+
+.filter-input {
+    padding: 10px 14px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    font-size: 14px;
+    width: 88%;
+    transition: all 0.2s ease;
+    outline: none;
+    margin-bottom: 5px;
+    background-color: #fff;
+    box-shadow: inset 0 1px 2px rgba(0,0,0,0.03);
+}
+
+.filter-input::placeholder {
+    color: #9ca3af;
+}
+
+.filter-input:focus {
+    border-color: #6366f1;
+    box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.3);
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 16px;
+}
+
+.filter-group label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #9333ea;
+}
+
+.filter-group select {
+    padding: 8px 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 6px;
+    background-color: white;
+    font-size: 14px;
+    color: #111827;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg fill='none' stroke='gray' stroke-width='2' viewBox='0 0 24 24'%3E%3Cpath d='M19 9l-7 7-7-7'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.75rem center;
+    background-size: 1rem;
+}
+
+.recommendation-box {
+    width: 94%;                   /* ✅ 좌우 카드들과 너비 동일하게 */
+    height: 50px;
+    background: linear-gradient(to right, #6366f1, #ec4899);
+    color: white;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.recommendation-box .message {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.recommendation-box .ai-hint {
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+.study-main-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+
+.study-card {
+    background: #fff;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    border-left: 6px solid #6366f1;
+}
+
+.study-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(99, 102, 241, 0.15);
+}
+
+.study-card-header {
+    margin-bottom: 15px;
+}
+
+.study-card-header h3 {
+    margin: 0 0 8px 0;
+    color: #333;
+    font-size: 1.2em;
+}
+
+.study-leader {
+    color: #666;
+    font-size: 0.9em;
+}
+
+.study-info {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 15px;
+    font-size: 0.9em;
+}
+
+.study-info span {
+    color: #666;
+}
+
+.study-description {
+    margin-top: auto;
+    font-size: 0.95rem;
+    color: #374151;
+    line-height: 1.6;
+    opacity: 0.85;
+}
+
+.loading {
+    text-align: center;
+    padding: 40px;
+    font-size: 1.2em;
+    color: #666;
+}
+
+.no-results {
+    text-align: center;
+    padding: 40px;
+    color: #666;
+    font-size: 1.1em;
+    grid-column: 1 / -1;
+}
+
+@media (max-width: 1024px) {
+    .study-main-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .study-search-container {
+        flex-direction: column;
+    }
+    .search-sidebar {
+        position: relative;
+        width: 100%;
+    }
+    .study-main-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+.study-create-btn {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    bottom: 100px;
+    right: 45px;
+    padding: 12px 24px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+    font-weight: 600;
+    background-color: #6366f1;
+    color: white;
+    transition: background-color 0.2s;
+}
+
+.search-mode-toggle {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.mode-btn {
+    padding: 0.8rem 2rem;
+    border: 2px solid #007bff;
+    border-radius: 25px;
+    background: white;
+    color: #007bff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.mode-btn:hover {
+    background: #f0f7ff;
+}
+
+.mode-btn.active {
+    background: #007bff;
+    color: white;
+}
+
+.ai-search-container {
+    width: 100%;
+    padding: 2rem;
+}
+
+.ai-search-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.ai-search-header h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
+
+.ai-search-header p {
+    color: #666;
+}
+
+.ai-recommendations {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.ai-recommendation-card {
+    position: relative;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
+}
+
+.ai-recommendation-card:hover {
+    transform: translateY(-5px);
+}
+
+.ai-recommendation-reason {
+    padding: 1rem;
+    background: #f8f9fa;
+    border-top: 1px solid #eee;
+}
+
+.ai-badge {
+    display: inline-block;
+    padding: 0.3rem 0.8rem;
+    background: #007bff;
+    color: white;
+    border-radius: 15px;
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.ai-recommendation-reason p {
+    color: #666;
+    font-size: 0.9rem;
+    margin: 0;
+}
+
+.search-tabs {
+    display: flex;
+    gap: 1px;
+    background: #e5e7eb;
+    padding: 2px;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.tab-btn {
+    flex: 1;
+    padding: 0.8rem;
+    border: none;
+    background: white;
+    color: #666;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.tab-btn:first-child {
+    border-radius: 6px 0 0 6px;
+}
+
+.tab-btn:last-child {
+    border-radius: 0 6px 6px 0;
+}
+
+.tab-btn:hover {
+    background: #f3f4f6;
+}
+
+.tab-btn.active {
+    background: #6366f1;
+    color: white;
+}
+
+.ai-search-input-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2rem;
+    align-items: flex-start;
+    margin-left: 8px;
+}
+
+.ai-search-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.ai-token-info {
+    color: #888;
+    font-weight: 500;
+    font-size: 0.95rem;
+}
+
+.ai-token-msg {
+    color: red;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.ai-guest-msg {
+    color: red;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+}
+
+.ai-search-input {
+    width: 100%;
+    min-height: 100px;
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 14px;
+    line-height: 1.5;
+    resize: none;
+    background-color: #fff;
+    transition: all 0.2s ease;
+    margin-bottom: 12px;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+.ai-search-input::placeholder {
+    color: #9ca3af;
+    font-size: 14px;
+}
+
+.ai-search-input:focus {
+    outline: none;
+    border-color: #6366f1;
+    box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.1);
+}
+
+.ai-search-btn {
+    width: 100%;
+    margin-top: 0.5rem;
+    padding: 0.7rem;
+    font-size: 1.05rem;
+    background: #4f46e5;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.ai-search-btn:disabled {
+    background: #bdbdbd;
+    cursor: not-allowed;
+}
+
+.ai-search-hint {
+    background: #f9fafb;
+    border-radius: 8px;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.ai-search-hint p {
+    color: #6366f1;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+.ai-search-hint ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ai-search-hint li {
+    color: #666;
+    font-size: 0.9rem;
+    padding: 0.3rem 0;
+    position: relative;
+    padding-left: 1.2rem;
+}
+
+.ai-search-hint li:before {
+    content: "•";
+    color: #6366f1;
+    position: absolute;
+    left: 0;
+}

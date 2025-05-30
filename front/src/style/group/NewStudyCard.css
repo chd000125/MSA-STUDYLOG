@@ -1,0 +1,72 @@
+.home-study-list {
+    display: flex;
+    gap: 1rem; /* 카드 사이 간격 */
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.study-card {
+    position: relative; /* 이거 꼭 필요 */
+    padding: 1rem;
+    border-radius: 1rem;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    width: 200px;
+}
+
+.study-status {
+    display: inline-block;
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 2px 8px;
+    border-radius: 12px;
+    margin-left: 10px;
+    background-color: #06b6d4; /* 기본: 청록 */
+    color: white;
+}
+
+.study-status.closed {
+    background-color: #3b82f6; /* 마감일 경우 파랑 */
+}
+
+.study-card.closed {
+    background-color: #f3f4f6;
+    cursor: not-allowed;
+    opacity: 0.8;
+    pointer-events: none;
+}
+
+.status-badge {
+    position: absolute;
+    top: 8px;
+    left: 10px;
+    padding: 3px 8px;
+    font-size: 0.70rem;
+    font-weight: 600;
+    color: white;
+    border-radius: 9999px;
+    background-color: #06b6d4; /* 모집중: 청록 */
+    z-index: 10;
+}
+
+/* 마감 스타일 */
+.study-card.closed .status-badge {
+    background-color: #3b82f6; /* 파랑 */
+}
+
+.study-card h3 {
+    font-size: 1rem;
+    font-weight: 550;
+    margin-bottom: 0.25rem;
+}
+
+.study-leader {
+    font-size: 0.8rem;
+    color: #6b7280;
+}
+
+.study-info,
+.study-description {
+    font-size: 0.8rem;
+    line-height: 1.4;
+}

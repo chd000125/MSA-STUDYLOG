@@ -1,0 +1,126 @@
+/* StudyCard.css */
+
+
+
+
+.study-card-container {
+    display: flex;
+    flex-direction: column;
+    width: 250px;
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 0.75rem;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    overflow: hidden;
+    cursor: pointer;
+    height: 300px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.study-card-container:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.study-card-image img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0.75rem;
+}
+
+.study-card-body {
+    padding: 1rem;
+}
+
+.study-tag {
+    display: inline-block;
+    background-color: #06b6d4;
+    color: white;
+    font-size: 0.75rem;
+    padding: 0.25rem 0.75rem;
+    border-radius: 9999px;
+    margin-bottom: 0.75rem;
+    text-align: center;
+    width: fit-content;
+}
+
+.study-title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #1f2937;
+    margin-bottom: 0.5rem;
+}
+
+.study-description {
+    color: #4b5563;
+    font-size: 0.95rem;
+    line-height: 1.5;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 2;        /* 표시할 줄 수 */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+.study-card-footer {
+    padding: 1rem;
+    border-top: 1px solid #f1f5f9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.study-author {
+    display: flex;
+    align-items: center;
+}
+
+.author-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 9999px;
+    object-fit: cover;
+}
+
+.author-info {
+    margin-left: 0.75rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.author-name {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #1f2937;
+}
+
+.author-date {
+    font-size: 0.75rem;
+    color: #6b7280;
+}
+
+.study-card-container.closed {
+    background-color: #f3f4f6; /* 밝은 회색 배경 */
+    border-color: #d1d5db;
+    opacity: 0.85;
+    cursor: not-allowed;
+}
+
+.study-card-container.closed .study-tag {
+    background-color: #3b82f6; /* 파란색 */
+}
+
+.study-card-container.closed .study-title,
+.study-card-container.closed .author-name,
+.study-card-container.closed .study-description {
+    color: #9ca3af; /* 흐린 회색 글씨 */
+}
+
+.study-card-container.closed:hover {
+    transform: none;
+    box-shadow: none;
+}

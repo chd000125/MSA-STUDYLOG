@@ -1,0 +1,68 @@
+.todo-container {
+    width: 100%;
+    margin: 40px;
+    background: #ffffff; /* 화이트 배경 */
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1); /* 부드러운 기본 그림자 */
+}
+
+.todo-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-radius: 12px;
+    background: #f8f9fa; /* 연회색 박스 */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.05); /* 가볍게만 그림자 */
+    transition: background 0.3s;
+}
+
+.todo-item:hover {
+    background: #f1f3f5; /* 마우스 오버시 약간 진해짐 */
+}
+
+.field {
+    flex: 1;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 500;
+    color: #333;
+}
+
+.create-form {
+    display: flex;
+    margin-bottom: 20px;
+    gap: 10px;
+}
+
+.create-form input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    background: #ffffff;
+    outline: none;
+    font-size: 15px;
+}
+
+.neumorphism-button {
+    background: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    padding: 10px 16px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.2s, border 0.2s;
+}
+
+.neumorphism-button:hover {
+    background: #f8f9fa;
+    border-color: #888;
+}

@@ -1,0 +1,95 @@
+.board-management-container {
+  padding: 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.board-management-container h2 {
+  font-size: 22px;
+  margin-top: 30px;
+  margin-bottom: 15px;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 5px;
+}
+
+.board-management-container input {
+  padding: 10px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  width: 250px;
+  box-sizing: border-box;
+}
+
+.board-management-container button {
+  margin-left: 10px;
+  padding: 10px 16px;
+  font-size: 14px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.board-management-container button:hover {
+  opacity: 0.9;
+}
+
+.board-management-container button[type="button"] {
+  background-color: #007bff;
+  color: white;
+}
+
+.board-management-container .cancel-btn {
+  background-color: #6c757d;
+  color: white;
+}
+
+.board-management-container .delete-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+.board-management-container .save-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+.board-list,
+.tag-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 10px;
+}
+
+.board-list li,
+.tag-list li {
+  background-color: #f9f9f9;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 500px; /* ✅ 너비 제한 추가 */
+  gap: 10px;
+}
+
+.board-list li span,
+.tag-list li span {
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.board-list li button,
+.tag-list li button {
+  flex-shrink: 0;
+}

@@ -1,0 +1,178 @@
+/* 전체 레이아웃 좌우 분할 */
+.post-detail-layout {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.post-detail-main {
+  flex: 1;
+  min-width: 0;
+}
+
+/* 오른쪽 고정 카드 */
+.post-detail-sidebar {
+  width: 320px;
+  flex-shrink: 0;
+  top: 100px;
+}
+
+/* 게시글 컨테이너 */
+.post-detail-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  font-family: Arial, sans-serif;
+}
+
+.post-detail-title {
+  font-size: 26px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.post-detail-author {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.post-detail-category {
+  font-size: 15px;
+  color: #888;
+  margin-bottom: 6px;
+}
+
+.post-detail-views {
+  font-size: 14px;
+  color: #aaa;
+  margin-bottom: 20px;
+}
+
+.post-detail-content {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 40px;
+  min-height: 40vh;
+}
+
+.comment-section h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.comment-form input,
+.comment-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.comment-form button {
+  padding: 10px 16px;
+  background-color: #6366f1;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.comment-form button:hover {
+  background-color: #43a047;
+}
+
+.comment-list {
+  margin-top: 20px;
+  padding-left: 0;
+  list-style: none;
+}
+
+.comment-item {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.comment-item strong {
+  color: #333;
+  margin-right: 6px;
+}
+
+.edit-button {
+  padding: 10px 15px;
+  background-color: #6366f1;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.edit-button:hover {
+  background-color: #acacac;
+}
+
+.back-button {
+  padding: 10px 15px;
+  background-color: #ddd;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.back-button:hover {
+  background-color: #ccc;
+}
+
+.post-detail-tags {
+  margin-top: 10px;
+  font-size: 0.95rem;
+}
+
+.tag-badge {
+  display: inline-block;
+  background-color: #eef;
+  color: #333;
+  border-radius: 12px;
+  padding: 4px 10px;
+  margin: 4px 4px 0 0;
+  font-size: 0.85rem;
+}
+
+.attached-study-card {
+  margin-top: 30px;
+  background-color: #f8f8f8;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #ddd;
+}
+
+.attached-study-card h3 {
+  margin: 10px 0;
+}
+
+.attached-study-card .study-description {
+  color: #666;
+  font-size: 0.95rem;
+  margin-top: 6px;
+}
+
+.attached-study-wrapper {
+  margin-top: 30px;
+  padding: 20px;
+  border-top: 1px solid #ddd;
+}

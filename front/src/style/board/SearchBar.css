@@ -1,0 +1,119 @@
+.search-container {
+    margin-top: -30px;
+    margin-left: -150px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 50px;
+    text-align: center;
+    width: 118%;
+    position: relative;
+    background-color: white;
+    border-radius: 12px;      /* ✅ 둥글게 처리 (선택) */
+}
+
+
+/* 검색 input */
+.search-container input {
+    padding: 13px;
+    width: 60%;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    border: 2px solid #6366f1; /* ✅ 검은 테두리 */
+}
+
+/* 이미지 검색 버튼 */
+.search-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    margin-left: 1px;
+    display: inline-flex;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.search-button img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+    transition: transform 0.2s ease;
+}
+
+.search-button img:hover {
+    transform: scale(1.1);
+}
+
+.autocomplete-popup {
+    position: absolute;
+    top: 59%;
+    left: 35.6%;
+    transform: translateX(-50%);
+    width: 400px;
+    margin-top: 8px;
+    background: white;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 0;
+    max-height: 200px;
+    overflow-y: auto;
+    z-index: 20;
+    text-align: left;
+}
+
+.autocomplete-popup li {
+    padding: 10px 16px;
+    cursor: pointer;
+}
+
+.autocomplete-popup li:hover {
+    background-color: #f0f0f0;
+}
+
+.autocomplete-popup .no-results {
+    color: #888;
+    text-align: center;
+    cursor: default;
+}
+
+
+.no-results {
+    color: #aaa;
+    padding: 10px;
+    text-align: center;
+}
+
+/* 검색 결과 영역 */
+.search-results {
+    margin-top: 20px;
+    text-align: left;
+}
+
+/* 검색 카드 */
+.search-card {
+    background: #f9f9f9;
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    margin-bottom: 12px;
+}
+
+.search-card h4 {
+    margin: 0;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.search-card p {
+    margin: 8px 0;
+    color: #666;
+}
+
+.search-card .meta {
+    font-size: 0.85rem;
+    color: #888;
+}

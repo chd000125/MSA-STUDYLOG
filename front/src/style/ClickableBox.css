@@ -1,0 +1,43 @@
+/* src/components/ClickableBox.css */
+
+.clickable-box {
+  width: 90px;
+  height: 90px;
+  padding: 8px;
+  border-radius: 12px;
+  cursor: pointer;
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  color: #333;
+  user-select: none;
+}
+
+.clickable-box:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.04); /* 기존보다 살짝 어두운 느낌만 주는 배경 */
+}
+
+
+.clickable-box .image-container {
+  width: 32px;
+  height: 32px;
+  background-color: #a8a8a87e;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 6px;
+  overflow: hidden;
+}
+
+.clickable-box .image-container img {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}

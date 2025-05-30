@@ -1,0 +1,86 @@
+.post-list-container {
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+}
+
+.post-row {
+  padding: 16px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.post-row:hover {
+  background: #f9f9f9;
+}
+
+.post-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 6px;
+}
+
+/* 게시글 메타 정보 */
+.post-meta {
+  display: flex;
+  justify-content: space-between; /* 양 옆으로 배치 */
+  font-size: 14px;
+  color: #555;
+  margin-top: 8px;
+}
+
+.post-meta span {
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.post-meta span svg, .post-meta span span {
+  font-size: 18px;
+  color: #333; /* 흑백 스타일 */
+}
+
+.left-meta {
+  display: flex;
+  gap: 8px;
+}
+
+.right-meta {
+  display: flex;
+  gap: 8px;
+}
+
+.post-tags {
+  margin-top: 6px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.post-tags .tag {
+  background: #eee;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 16px 0;
+}
+
+.page-button {
+  padding: 8px 12px;
+  margin: 0 4px;
+  border: none;
+  background: #eee;
+  cursor: pointer;
+}
+
+.page-button.active {
+  background: #333;
+  color: white;
+}

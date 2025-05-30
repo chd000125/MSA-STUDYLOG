@@ -1,0 +1,199 @@
+/* style/AuthPage.css */
+
+.auth-page-wrapper {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #d9e4f5, #f7faff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+
+/* STUDYLOG 타이틀 */
+.main-card-title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: 800;
+}
+
+/* 카드 선택 영역 */
+.card-row {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.auth-card {
+    background: white;
+    border-radius: 16px;
+    padding: 2rem 2.5rem;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    min-width: 180px;
+}
+
+.auth-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+.auth-card p {
+    margin-top: 0.5rem;
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: 500;
+}
+
+/* 폼 영역 */
+.auth-form-wrapper {
+    background: transparent;       /* ✅ 배경 제거 */
+    box-shadow: none;              /* ✅ 그림자 제거 */
+    padding: 0;                    /* ✅ 안쪽 여백 제거 */
+    max-width: 100%;               /* ✅ 너비 제한 해제 */
+}
+
+
+
+.back-button2 {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.back-button:hover {
+    text-decoration: underline;
+}
+
+
+/* 반응형 대응 */
+@media (max-width: 480px) {
+    .main-card-title {
+        font-size: 2rem;
+    }
+    .auth-card {
+        min-width: 140px;
+        padding: 1.5rem;
+    }
+    .auth-form-wrapper {
+        padding: 2rem;
+    }
+}
+
+/* style/AuthSplitPage.css */
+.auth-container {
+    display: flex;
+    width: 100%;
+    max-width: 960px;
+    height: 600px;
+    margin: 4rem auto;
+    border-radius: 16px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* 좌측 영역 */
+.auth-side {
+    flex: 1;
+    background: linear-gradient(135deg, #6366f1, #ec4899);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2.5rem;
+    text-align: center;
+}
+
+.auth-side h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.auth-side button {
+    margin-top: 2rem;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    background: #fff;
+    color: #333;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* 우측 폼 영역 */
+.auth-form {
+    flex: 1;
+    padding: 2.5rem 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #fff;
+}
+
+/* auth-wrapper 전체 구조 */
+.auth-wrapper {
+    display: flex;
+    width: 1100px;       /* 🔼 기존보다 넓게 */
+    height: 700px;       /* 🔼 높이도 조금 키움 */
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    background: white;
+}
+
+/* 왼쪽 영역 */
+.auth-left {
+    width: 50%;
+    background: linear-gradient(to bottom right, #6366f1, #ec4899);
+    color: white;
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+/* 오른쪽 슬라이딩 폼 */
+.auth-right {
+    width: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+/* 슬라이더 내부 구조 */
+.form-slider {
+    display: flex;
+    width: 200%;
+    height: 100%;
+}
+
+/* 각각의 폼 패널 */
+.form-panel {
+    width: 50%;
+    padding: 2.5rem;
+    box-sizing: border-box;
+}
+
+.auth-message button {
+    padding: 0.75rem 1.75rem;
+    font-size: 16px;
+    font-weight: 600;
+    color: #6366f1;
+    background-color: #fff;
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.auth-message button:hover {
+    background-color: #f3f4f6;
+    color: #4338ca;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
