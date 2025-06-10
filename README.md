@@ -33,7 +33,7 @@ StudyLog는 **스터디 모집부터 운영, 커뮤니케이션, 일정 관리�
 ![JPA](https://img.shields.io/badge/JPA-59666C?style=for-the-badge)
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white)
 ![Elasticsearch](https://img.shields.io/badge/Elasticsearch-005571?style=for-the-badge&logo=elasticsearch&logoColor=white)
-![WebSocket]
+![WebSocket](https://img.shields.io/badge/WebSocket-enabled-brightgreen.svg)
 
 <!-- ⚙ DevOps & Tooling -->
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
