@@ -1,4 +1,4 @@
-### 📖 StudyLog (NSA기반 웹 어플리케이션 커뮤니티 STUDYLOG)
+### 📖 StudyLog (MSA기반 웹 어플리케이션 커뮤니티 STUDYLOG)
 ---
 
 
